@@ -55,7 +55,7 @@ function updateContent(button, index) {
 
   $destinationName.textContent = content[index].name;
   $destinationDescription.textContent = content[index].description;
-  $destinationImage.src = `/public/assets/destination/image-destination-${index}.avif`;
+  $destinationImage.src = `../../public/assets/destination/image-destination-${index}.avif`;
   $destinationDistance.textContent = content[index].distance;
   $destinationTravelTime.textContent = content[index].travel;
 }

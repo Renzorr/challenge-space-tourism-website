@@ -34,8 +34,8 @@ function updateContent(button, index) {
 
   $techName.textContent = content[index].name;
   $techDescription.textContent = content[index].description;
-  $techImage.src = `/public/assets/technology/image-${index}-portrait.webp`;
-  $techSrcset.srcset = `/public/assets/technology/image-${index}-landscape.webp`;
+  $techImage.src = `../../public/assets/technology/image-${index}-portrait.webp`;
+  $techSrcset.srcset = `../../public/assets/technology/image-${index}-landscape.webp`;
 }
 
 $buttons.forEach((button, index) => {

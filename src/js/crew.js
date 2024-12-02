@@ -41,7 +41,7 @@ function updateContent(button, index) {
   $crewRole.textContent = content[index].role;
   $crewDescription.textContent = content[index].bio;
 
-  $crewImage.src = `/public/assets/crew/image-crew-${index}.avif`;
+  $crewImage.src = `../../public/assets/crew/image-crew-${index}.avif`;
 }
 
 $buttons.forEach((button, index) => {
