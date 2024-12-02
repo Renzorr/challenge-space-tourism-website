@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      <link
+      rel="preload"
+      href="/src/fonts/Bellefair-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/Barlow-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/BarlowCondensed-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/styleguide.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/technology/technology.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="background technology">
+    <nav class="navbar-mobile background-blur" aria-hidden="true">
+      <div class="navbar-mobile-top">
+        <button aria-label="close menu" class="close-menu">
+          <img src="/public/assets/shared/icon-close.svg" alt="" />
+        </button>
+      </div>
+
+      <ul class="navbar-mobile-bottom">
+        <li>
+          <a href="/index.html" class="navbar-link mobile body-md">
+            <span>00</span>Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/src/pages/destination.html"
+            class="navbar-link mobile body-md"
+            ><span>01</span>Destination
+          </a>
+        </li>
+        <li>
+          <a href="/src/pages/crew.html" class="navbar-link mobile body-md"
+            ><span>02</span>Crew</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/technology.html"
+            class="navbar-link mobile body-md"
+            aria-current="page"
+          >
+            <span>03</span>Technology
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <nav class="navbar">
+          <div class="navbar-left navbar-item">
+            <img
+              src="/public/assets/shared/logo.svg"
+              alt="Space tourism logo"
+            />
+            <div class="separator"></div>
+          </div>
+
+          <ul class="navbar-right navbar-item background-blur">
+            <li>
+              <a href="/index.html" class="navbar-link body-md">
+                <span>00</span>Home
+              </a>
+            </li>
+            <li>
+              <a href="/src/pages/destination.html" class="navbar-link body-md">
+                <span>01</span>Destination
+              </a>
+            </li>
+            <li>
+              <a href="/src/pages/crew.html" class="navbar-link body-md">
+                <span>02</span>Crew
+              </a>
+            </li>
+            <li>
+              <a
+                href="/src/pages/technology.html"
+                class="navbar-link body-md"
+                aria-current="page"
+              >
+                <span>03</span>Technology
+              </a>
+            </li>
+          </ul>
+
+          <button aria-label="open menu" class="hidden open-menu">
+            <img src="/public/assets/shared/icon-hamburger.svg" alt="" />
+          </button>
+        </nav>
+      </header>
+
+      <section>
+        <div class="container content-padding-desktop technology-container">
+          <h2 class="subheading-lg technology-heading">
+            <span>03</span> Space Launch 101
+          </h2>
+
+          <div class="technology-content">
+            <div class="content-padding-mobile technology-info">
+              <aside class="technology-controls">
+                <button class="heading-sm technology-btn active">1</button>
+                <button class="heading-sm technology-btn">2</button>
+                <button class="heading-sm technology-btn">3</button>
+              </aside>
+
+              <article class="technology-details">
+                <h3 class="heading-sm technology-subtitle">The Terminology…</h3>
+                <h3 class="heading-md technology-title">Launch Vehicle</h3>
+                <div class="content-line">
+                  <p class="body-lg technology-description">
+                    A launch vehicle or carrier rocket is a rocket-propelled
+                    vehicle used to carry a payload from Earth's surface to
+                    space, usually to Earth orbit or beyond. Our WEB-X carrier
+                    rocket is the most powerful in operation. Standing 150
+                    metres tall, it's quite an awe-inspiring sight on the launch
+                    pad!
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <picture class="technology-img-container">
+              <source
+                media="(max-width: 1024px)"
+                srcset="/public/assets/technology/image-0-landscape.webp"
+              />
+              <img
+                src="/public/assets/technology/image-0-portrait.webp"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/setup.js"></script>
+    <script src="/src/js/technology.js" type="module"></script>
+  </body>
+</html>

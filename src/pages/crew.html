@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      <link
+      rel="preload"
+      href="/src/fonts/Bellefair-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/Barlow-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/BarlowCondensed-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/styleguide.css" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/crew/crew.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="background crew">
+    <nav class="navbar-mobile background-blur" aria-hidden="true">
+      <div class="navbar-mobile-top">
+        <button aria-label="close menu" class="close-menu">
+          <img src="/public/assets/shared/icon-close.svg" alt="" />
+        </button>
+      </div>
+
+      <ul class="navbar-mobile-bottom">
+        <li>
+          <a href="/index.html" class="navbar-link mobile body-md">
+            <span>00</span>Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/src/pages/destination.html"
+            class="navbar-link mobile body-md"
+            ><span>01</span>Destination
+          </a>
+        </li>
+        <li>
+          <a
+            href="/src/pages/crew.html"
+            class="navbar-link mobile body-md"
+            aria-current="page"
+            ><span>02</span>Crew</a
+          >
+        </li>
+        <li>
+          <a
+            href="/src/pages/technology.html"
+            class="navbar-link mobile body-md"
+          >
+            <span>03</span>Technology
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <nav class="navbar">
+          <div class="navbar-left navbar-item">
+            <img
+              src="/public/assets/shared/logo.svg"
+              alt="Space tourism logo"
+            />
+            <div class="separator"></div>
+          </div>
+
+          <ul class="navbar-right navbar-item background-blur">
+            <li>
+              <a href="/index.html" class="navbar-link body-md">
+                <span>00</span>Home
+              </a>
+            </li>
+            <li>
+              <a href="/src/pages/destination.html" class="navbar-link body-md">
+                <span>01</span>Destination
+              </a>
+            </li>
+            <li>
+              <a
+                href="/src/pages/crew.html"
+                class="navbar-link body-md"
+                aria-current="page"
+              >
+                <span>02</span>Crew
+              </a>
+            </li>
+            <li>
+              <a href="/src/pages/technology.html" class="navbar-link body-md">
+                <span>03</span>Technology
+              </a>
+            </li>
+          </ul>
+
+          <button aria-label="open menu" class="hidden open-menu">
+            <img src="/public/assets/shared/icon-hamburger.svg" alt="" />
+          </button>
+        </nav>
+      </header>
+
+      <section>
+        <div class="container content-padding-desktop crew-container">
+          <h1 class="subheading-lg crew-heading">
+            <span>02</span> Meet your Crew
+          </h1>
+
+          <div class="content-padding-mobile crew-content">
+            <div class="crew-info">
+              <article class="crew-details">
+                <h2 class="heading-sm crew-subtitle">Commander</h2>
+                <h2 class="heading-md crew-title">Douglas Hurley</h2>
+                <p class="body-lg crew-description">
+                  Douglas Gerald Hurley is an American engineer, former Marine
+                  Corps pilot and former NASA astronaut. He launched into space
+                  for the third time as commander of Crew Dragon Demo-2.
+                </p>
+              </article>
+
+              <div class="crew-controls">
+                <button class="crew-btn active"></button>
+                <button class="crew-btn"></button>
+                <button class="crew-btn"></button>
+                <button class="crew-btn"></button>
+              </div>
+            </div>
+
+            <picture class="crew-img-container">
+              <img src="/public/assets/crew/image-crew-0.avif" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="/src/js/menu.js"></script>
+    <script type="module" src="/src/js/setup.js"></script>
+    <script type="module" src="/src/js/crew.js"></script>
+  </body>
+</html>

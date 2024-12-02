@@ -1,0 +1,212 @@
+/* fonts */
+@font-face {
+  font-family: "Barlow";
+  font-weight: 400;
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  src: url("../fonts/BarlowCondensed-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bellefair";
+  font-weight: 400;
+  src: url("../fonts/Bellefair-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+/*  Variables */
+:root {
+  --blue-900: #0b0d17;
+  --blue-500: #979797;
+  --blue-300: #d0d6f9;
+  --white: #ffffff;
+
+  --fw-base: 400;
+
+  --section-padding: clamp(20px, 4.5vw, 64px);
+
+  --animation-primary-ease-in: 0.8s cubic-bezier(0.25, 1, 0.1, 1);
+  --animation-primary-expo: 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+/* Typography */
+.heading-xl {
+  font-family: "Bellefair", sans-serif;
+  font-size: clamp(80px, 15vw, 144px);
+}
+
+.heading-lg {
+  font-family: "Bellefair", sans-serif;
+  font-size: clamp(56px, 5.25vw, 96px);
+}
+
+.heading-md {
+  font-family: "Bellefair", sans-serif;
+  font-size: clamp(24px, 5.25vw, 56px);
+}
+
+.heading-sm {
+  font-family: "Bellefair", sans-serif;
+  font-size: clamp(18px, 4.25vw, 32px);
+}
+
+.subheading-lg {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(20px, 4.25vw, 28px);
+  letter-spacing: 4px;
+}
+
+.subheading-md {
+  font-family: "Bellefair", sans-serif;
+  font-size: clamp(16px, 4.25vw, 28px);
+}
+
+.body-sm {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.body-md {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(14px, 4.25vw, 16px);
+  letter-spacing: 2px;
+}
+
+.body-lg {
+  font-family: "Barlow", sans-serif;
+  font-size: clamp(15px, 4.25vw, 18px);
+  line-height: 1.8;
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin-inline: auto;
+}
+
+.hidden {
+  display: none;
+
+  @media (width <= 820px) {
+    display: block;
+  }
+}
+
+.item {
+  flex: 1;
+}
+
+.background-blur {
+  --color: hsla(0, 0%, 100%, 0);
+  background: var(--color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  background-image: url("../../public/assets/home/background-home-desktop.avif");
+
+  @media (width<= 1024px) {
+    background-image: url("../../public/assets/home/background-home-tablet.avif");
+  }
+
+  @media (width<= 820px) {
+    background-image: url("../../public/assets/home/background-home-mobile.webp");
+  }
+}
+
+.destination {
+  background-image: url("../../public/assets/destination/background-destination-desktop.avif");
+
+  @media (width<= 1024px) {
+    background-image: url("../../public/assets/destination/background-destination-tablet.avif");
+  }
+
+  @media (width<= 820px) {
+    background-image: url("../../public/assets/destination/background-destination-mobile.avif");
+  }
+}
+
+.crew {
+  background-image: url("../../public/assets/crew/background-crew-desktop.avif");
+
+  @media (width<= 1024px) {
+    background-image: url("../../public/assets/crew/background-crew-tablet.avif");
+  }
+
+  @media (width<= 820px) {
+    background-image: url("../../public/assets/crew/background-crew-mobile.webp");
+  }
+}
+
+.technology {
+  background-image: url("../../public/assets/technology/background-technology-desktop.avif");
+
+  @media (width<= 1024px) {
+    background-image: url("../../public/assets/technology/background-technology-tablet.webp");
+  }
+
+  @media (width<= 820px) {
+    background-image: url("../../public/assets/technology/background-technology-mobile.webp");
+  }
+}
+
+.content-padding-mobile {
+  padding-inline: 0;
+
+  @media (width< 1024px) {
+    padding-inline: 1.25em;
+  }
+}
+
+.content-padding-desktop {
+  padding-inline: 2em;
+
+  @media (width< 1024px) {
+    padding-inline: 0;
+  }
+}
+
+/* Main */
+body {
+  height: 100vh;
+  font-family: "Barlow", sans-serif;
+  background-color: var(--blue-900);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.25fr auto;
+}
