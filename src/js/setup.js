@@ -5,7 +5,11 @@ export function animateContent(contentContainer, imageElement) {
     { y: 0, opacity: 1, duration: 0.9, ease: "power4.inOut" }
   );
 
-  gsap.fromTo(imageElement, { scale: 0 }, { scale: 1, ease: "power3.out" });
+  gsap.fromTo(
+    imageElement,
+    { x: 50, opacity: 0 },
+    { x: 0, opacity: 1, duration: 0.9, ease: "power3.out", delay: 0.2 }
+  );
 }
 
 export function handleChange(button, btnActive) {
